@@ -22,7 +22,7 @@ Adds a `data-test-id` attribute to all jsx html elements. Helpful for test write
 
 
 ```sh
-jscodeshift -t codemods/transforms/ 	jsx-add-data-test-id-attribute.js <path>
+jscodeshift -t codemods/transforms/jsx-add-data-test-id-attribute.js <path>
 ```
 
 E.g. - converts
