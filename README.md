@@ -19,6 +19,7 @@ This repository contains a collection of codemod scripts for use with [JSCodeshi
 #### `jsx-add-data-test-id-attribute.js`
 
 Adds a `data-test-id` attribute to all jsx html elements. Helpful for test writers to grab an element and simulate some action/event on it.
+It does not add the attribute to custom components. Also, doesn't add the attribute if it already exists on an element.
 
 ```sh
 jscodeshift -t codemods/transforms/jsx-add-data-test-id-attribute.js <path>
