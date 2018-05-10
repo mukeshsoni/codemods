@@ -26,7 +26,10 @@ export default function transformer(file, api) {
         // only add the attribute if id does not already exist
         if (
           !p.node.openingElement.attributes.some(
-            attribute => attribute.name.name === "data-test-id"
+            attribute =>
+              attribute &&
+              attribute.name &&
+              attribute.name.name === "data-test-id"
           )
         ) {
           j(p).replaceWith(
