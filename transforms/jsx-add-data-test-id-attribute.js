@@ -46,7 +46,7 @@ export default function transformer(file, api) {
                     )
                   )
                 ),
-                false
+                p.node.openingElement.selfClosing
               ),
               p.node.closingElement,
               p.node.children
